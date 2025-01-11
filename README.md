@@ -99,4 +99,4 @@ This template includes basic Appwrite setup for the following functionalities:
 
 ### Extending Appwrite
 
-You can extend Appwrite functionalities as per your project requirements. Refer to the Appwrite documentation for detailed guidance.
+You can extend Appwrite functionalities as per your project requirements. Refer to the [Appwrite documentation](https://appwrite.io/docs) for detailed guidance.
