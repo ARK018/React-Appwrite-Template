@@ -1,4 +1,4 @@
-# Vite-React-Tailwind-Shadcn Template
+# Vite-React-Appwrite Template
 
 This repository serves as a template for kickstarting projects using Vite, React, React Router DOM, Tailwind CSS and Shadcn. The template includes pre-configured routes and basic pages to help you quickly set up and start building your application.
 
@@ -31,7 +31,7 @@ Make sure you have the following installed on your machine:
 2. Clone the repository:
 
    ```bash
-   git clone https://github.com/ARK018/React-Tailwind-Shadcn-Template.git
+   git clone https://github.com/ARK018/React-Appwrite-Template.git ./
    ```
 
 3. Install dependencies:
