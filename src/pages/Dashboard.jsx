@@ -8,7 +8,7 @@ const Dashboard = () => {
   const { logoutUser } = useAuth();
   const navigate = useNavigate();
 
-  const [selected, setSelected] = useState("feature1");
+  const [selected, setSelected] = useState();
 
   useEffect(() => {
     const selected = localStorage.getItem("selected");

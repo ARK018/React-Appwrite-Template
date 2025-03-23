@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const loginUser = async (userInfo) => {
+  const loginUser = async (userInfo, retryAttempt = 0) => {
     setLoading(true);
     try {
       // Create a session with email and password
@@ -52,8 +52,17 @@ export const AuthProvider = ({ children }) => {
       navigate("/dashboard/feature1", { replace: true });
     } catch (error) {
       console.error("Login Error:", error.message);
-      message = error.message;
-      alert({ message });
+      if (error.code === 401 && error.message.includes("Invalid credential")) {
+        alert(error.message);
+      }
+      if (
+        error.code === 401 &&
+        error.message.includes("session is active") &&
+        retryAttempt < 1
+      ) {
+        await account.deleteSession("current");
+        return loginUser(userInfo, retryAttempt + 1);
+      }
     } finally {
       setLoading(false);
     }

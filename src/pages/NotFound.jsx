@@ -9,7 +9,7 @@ const NotFound = () => {
     navigate("/");
   };
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
+    <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-gray-100 to-gray-200">
       <div className="text-center px-4 lg:px-40 py-8 rounded-lg bg-white shadow-2xl">
         <div className="mb-8">
           <h1 className="text-8xl font-extrabold text-primary relative z-10">

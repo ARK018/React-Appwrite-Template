@@ -79,7 +79,7 @@ const SignIn = () => {
                   name="email"
                   autoComplete="off"
                   placeholder="john@gmail.com"
-                  className="border-b border-gray-300 focus:outline-none pl py-2 "
+                  className="border-b border-gray-300 focus:outline-hidden pl py-2 "
                 />
                 {mailError && (
                   <p className="text-red-500 text-sm">{mailError}</p>
@@ -102,7 +102,7 @@ const SignIn = () => {
                   name="password"
                   autoComplete="off"
                   placeholder="••••••••"
-                  className="border-b border-gray-300 focus:outline-none pl py-2 "
+                  className="border-b border-gray-300 focus:outline-hidden pl py-2 "
                 />
                 <button
                   type="button"

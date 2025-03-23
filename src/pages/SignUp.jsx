@@ -90,7 +90,7 @@ const SignUp = () => {
                   name="name"
                   autoComplete="off"
                   placeholder="John Doe"
-                  className="border-b border-gray-300 focus:outline-none pl py-2 "
+                  className="border-b border-gray-300 focus:outline-hidden pl py-2 "
                 />
                 {nameError && (
                   <p className="text-red-500 text-sm">{nameError}</p>
@@ -113,7 +113,7 @@ const SignUp = () => {
                   name="email"
                   autoComplete="off"
                   placeholder="john@gmail.com"
-                  className="border-b border-gray-300 focus:outline-none pl py-2 "
+                  className="border-b border-gray-300 focus:outline-hidden pl py-2 "
                 />
                 {mailError && (
                   <p className="text-red-500 text-sm">{mailError}</p>
@@ -136,7 +136,7 @@ const SignUp = () => {
                   name="password"
                   autoComplete="off"
                   placeholder="••••••••"
-                  className="border-b border-gray-300 focus:outline-none pl py-2 "
+                  className="border-b border-gray-300 focus:outline-hidden pl py-2 "
                 />
                 <button
                   type="button"
